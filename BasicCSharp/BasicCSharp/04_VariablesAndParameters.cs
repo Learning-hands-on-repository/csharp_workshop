@@ -122,7 +122,7 @@ namespace BasicCSharp
             int sum = PassVariableLengthArguments(1, 2, 3, 4, 5);
 
             // change the variable value to correct one
-            const int expectedResult = default(int);
+            const int expectedResult = 15;
 
             Assert.Equal(expectedResult, sum);
         }
@@ -133,7 +133,7 @@ namespace BasicCSharp
             int optionalParameterValue = PassAsOptionalArgument();
 
             // change the variable value to correct one
-            const int expectedResult = default(int);
+            const int expectedResult = 23;
 
             Assert.Equal(expectedResult, optionalParameterValue);
         }
