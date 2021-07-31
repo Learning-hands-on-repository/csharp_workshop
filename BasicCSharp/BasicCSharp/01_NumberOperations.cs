@@ -203,7 +203,8 @@ namespace BasicCSharp
         public void should_do_complement_operation()
         {
             // change "default(int)" to correct value. You should use Hex representation.
-            const int expectedResult = default(int);
+            const int expectedResult = -0x10;
+
 
             Assert.Equal(expectedResult, ~0xf);
         }
