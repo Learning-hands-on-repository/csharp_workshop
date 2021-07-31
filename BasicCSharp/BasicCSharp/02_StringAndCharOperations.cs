@@ -13,7 +13,7 @@ namespace BasicCSharp
             const string name = "Hall";
 
             // change "default(string)" to correct value.
-            const string expectedResult = default(string);
+            const string expectedResult = "Mr. Hall";
 
             Assert.Equal(expectedResult, (title + name));
         }
@@ -30,6 +30,7 @@ namespace BasicCSharp
 
             var builder = new StringBuilder();
             // add at most 2 lines of code here concating variable "title" and "name".
+            builder.Append(title).Append(name);
 
             Assert.Equal("Mr. Hall", builder.ToString());
         }
