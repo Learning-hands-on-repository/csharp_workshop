@@ -19,7 +19,7 @@ namespace BasicCSharp
         public void should_get_maximum_value_of_a_number_type()
         {
             // change "default(int)" to correct value. You should not explicitly write 2147483647.
-            int maximum = default(int);
+            int maximum = int.MaxValue;
 
             Assert.Equal(2147483647, maximum);
         }
@@ -28,7 +28,7 @@ namespace BasicCSharp
         public void should_get_correct_type_for_floating_point_number_without_literal()
         {
             // change "typeof(string)" to correct type.
-            Type guessTheType = typeof(string);
+            Type guessTheType = typeof(double);
 
             Assert.Equal(guessTheType, 1.0.GetType());
             Assert.Equal(guessTheType, 1E3.GetType());
@@ -38,7 +38,7 @@ namespace BasicCSharp
         public void should_get_correct_type_for_integer_without_literal()
         {
             // change "typeof(string)" to correct type.
-            Type guessTheType = typeof(string);
+            Type guessTheType = typeof(int);
 
             Assert.Equal(guessTheType, 1.GetType());
             Assert.Equal(guessTheType, 0x123.GetType());
@@ -48,7 +48,7 @@ namespace BasicCSharp
         public void should_get_correct_type_for_M_literal()
         {
             // change "typeof(string)" to correct type.
-            Type guessTheType = typeof(string);
+            Type guessTheType = typeof(decimal);
 
             Assert.Equal(guessTheType, 1M.GetType());
         }
@@ -57,7 +57,7 @@ namespace BasicCSharp
         public void should_get_correct_type_for_L_literal()
         {
             // change "typeof(string)" to correct type.
-            Type guessTheType = typeof(string);
+            Type guessTheType = typeof(long);
 
             Assert.Equal(guessTheType, 5L.GetType());
         }
@@ -66,7 +66,7 @@ namespace BasicCSharp
         public void should_get_correct_type_for_F_literal()
         {
             // change "typeof(string)" to correct type.
-            Type guessTheType = typeof(string);
+            Type guessTheType = typeof(float);
 
             Assert.Equal(guessTheType, 5F.GetType());
         }
@@ -78,7 +78,7 @@ namespace BasicCSharp
             long longNumber = originNumber;
 
             // change "default(long)" to correct value.
-            const long expectedResult = default(long);
+            const long expectedResult = 12345;
 
             Assert.Equal(expectedResult, longNumber);
         }
@@ -90,7 +90,7 @@ namespace BasicCSharp
             var shortNumber = (short)originNumber;
 
             // change "default(short)" to correct value.
-            const short expectedResult = default(short);
+            const short expectedResult = 12345;
 
             Assert.Equal(expectedResult, shortNumber);
         }
@@ -102,7 +102,7 @@ namespace BasicCSharp
             var byteNumber = (byte)originNumber;
 
             // change "default(byte)" to correct value.
-            const byte expectedResult = default(byte);
+            const byte expectedResult = 0x1234 % 256;
 
             Assert.Equal(expectedResult, byteNumber);
         }
@@ -110,12 +110,12 @@ namespace BasicCSharp
         [Fact]
         public void should_never_count_on_integer_floating_number_casting()
         {
-            int originalNumber = 100000001;
+            int originalNumber = 100000002;
             float floatingPointNumber = originalNumber;
             var castedBackNumber = (int)floatingPointNumber;
 
             // change "default(int)" to correct value.
-            const int expectedResult = default(int);
+            const int expectedResult = 100000000;
 
             Assert.Equal(expectedResult, castedBackNumber);
         }
@@ -128,7 +128,7 @@ namespace BasicCSharp
             var castedBackNumber = (int)decimalNumber;
 
             // change "default(int)" to correct value.
-            const int expectedResult = default(int);
+            const int expectedResult = 100000001;
 
             Assert.Equal(expectedResult, castedBackNumber);
         }
