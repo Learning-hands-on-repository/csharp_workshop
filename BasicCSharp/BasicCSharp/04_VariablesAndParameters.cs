@@ -42,7 +42,7 @@ namespace BasicCSharp
             int passingInt = 1;
 
             // change the variable value to correct one.
-            const int expectedResult = 2;
+            const int expectedResult = 1;
 
             FunctionPassingIntAsArgument(passingInt);
 
@@ -56,7 +56,7 @@ namespace BasicCSharp
             RefTypeClass modifiedRefTypeObject = FunctionPassingRefTypeClassAsArgument(refTypeObject);
 
             // change the variable value to correct one.
-            RefTypeClass expectedResult = modifiedRefTypeObject;
+            RefTypeClass expectedResult = refTypeObject;
 
             Assert.Same(expectedResult, refTypeObject);
         }
@@ -67,7 +67,7 @@ namespace BasicCSharp
             int passingInt = 1;
 
             // change the variable value to correct one.
-            const int expectedResult = 1;
+            const int expectedResult = 2;
 
             FunctionPassingRefIntAsArgument(ref passingInt);
 
@@ -84,7 +84,7 @@ namespace BasicCSharp
                 ref refTypeObject);
 
             // change the variable value to correct one
-            object expectedResult = refToOriginalObject;
+            object expectedResult = modifiedRefTypeObject;
 
             Assert.Same(expectedResult, refTypeObject);
         }
