@@ -273,7 +273,7 @@ namespace BasicCSharp
             const double denominator = 0.0;
 
             // change "default(double)" to correct value.
-            const double expectedResult = default(double);
+            const double expectedResult = double.PositiveInfinity;
 
             Assert.Equal(expectedResult, (numerator / denominator));
         }
