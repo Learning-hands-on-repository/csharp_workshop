@@ -68,7 +68,7 @@ namespace BasicCSharp
             char characterAtIndex2 = originalString[2];
 
             // change "default(char)" to correct value.
-            const char expectedResult = default (char);
+            const char expectedResult = 'i';
 
             Assert.Equal(expectedResult, characterAtIndex2);
         }
