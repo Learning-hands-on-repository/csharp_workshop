@@ -23,10 +23,10 @@ namespace BasicCSharp
         public void should_get_default_value_using_default_operator()
         {
             // change the variable values of the following 4 lines to correct values.
-            const int expectedDefaultIntResult = 1;
-            const bool expectedDefaultBoolResult = true;
-            const char expectedDefaultCharResult = 'a';
-            var expectedDefaultObjectResult = new object();
+            const int expectedDefaultIntResult = 0;
+            const bool expectedDefaultBoolResult = false;
+            const char expectedDefaultCharResult = '\0';
+            var expectedDefaultObjectResult = (object) null;
 
             #pragma warning disable xUnit2000 // suppress compiler warning about using default value expression as "actual" parameter
             Assert.Equal(expectedDefaultIntResult, default(int));
