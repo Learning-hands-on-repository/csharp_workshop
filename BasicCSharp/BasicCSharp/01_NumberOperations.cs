@@ -205,7 +205,6 @@ namespace BasicCSharp
             // change "default(int)" to correct value. You should use Hex representation.
             const int expectedResult = -0x10;
 
-
             Assert.Equal(expectedResult, ~0xf);
         }
 
@@ -213,7 +212,7 @@ namespace BasicCSharp
         public void should_do_and_operation()
         {
             // change "default(int)" to correct value. You should use Hex representation.
-            const int expectedResult = default(int);
+            const int expectedResult = 0x30;
 
             Assert.Equal(expectedResult, (0xf0 & 0x33));
         }
@@ -222,7 +221,7 @@ namespace BasicCSharp
         public void should_do_or_operation()
         {
             // change "default(int)" to correct value. You should use Hex representation.
-            const int expectedResult = default(int);
+            const int expectedResult = 0xF3;
 
             Assert.Equal(expectedResult, (0xf0 | 0x33));
         }
@@ -231,7 +230,7 @@ namespace BasicCSharp
         public void should_do_exclusive_or_operation()
         {
             // change "default(int)" to correct value. You should use Hex representation.
-            const int expectedResult = default(int);
+            const int expectedResult = 0xF0F0;
 
             Assert.Equal(expectedResult, (0xff00 ^ 0x0ff0));
         }
@@ -240,7 +239,7 @@ namespace BasicCSharp
         public void should_do_shift_left_operation()
         {
             // change "default(int)" to correct value. You should use Hex representation.
-            const int expectedResult = default(int);
+            const int expectedResult = 0x80;
 
             Assert.Equal(expectedResult, (0x20 << 2));
         }
@@ -249,7 +248,7 @@ namespace BasicCSharp
         public void should_do_shift_right_operation()
         {
             // change "default(int)" to correct value. You should use Hex representation.
-            const int expectedResult = default(int);
+            const int expectedResult = 0x10;
 
             Assert.Equal(expectedResult, (0x20 >> 1));
         }
@@ -262,7 +261,7 @@ namespace BasicCSharp
             Type arithmeticOperatorResultType = (shortNumber + anotherShortNumber).GetType();
 
             // change "typeof(short)" to correct type.
-            Type expectedResult = typeof(short);
+            Type expectedResult = typeof(int);
 
             Assert.Equal(expectedResult, arithmeticOperatorResultType);
         }
