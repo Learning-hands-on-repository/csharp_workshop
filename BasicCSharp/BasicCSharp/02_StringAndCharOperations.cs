@@ -80,7 +80,7 @@ namespace BasicCSharp
             string equivalent = "Original" + " String";
 
             // change "default(bool)" to correct value.
-            const bool expectedResult = default(bool);
+            const bool expectedResult = true;
 
             Assert.Equal(expectedResult, (str == equivalent));
         }
@@ -92,8 +92,8 @@ namespace BasicCSharp
             const string inDifferentCase = "oRiginal String";
 
             // change the variable values in the following 2 lines.
-            var caseSensitiveComparison = StringComparison.InvariantCultureIgnoreCase;
-            var caseInsensitiveComparison = StringComparison.InvariantCulture;
+            var caseSensitiveComparison = StringComparison.CurrentCulture;
+            var caseInsensitiveComparison = StringComparison.CurrentCultureIgnoreCase;
 
             Assert.False(originalString.Equals(inDifferentCase, caseSensitiveComparison));
             Assert.True(originalString.Equals(inDifferentCase, caseInsensitiveComparison));
