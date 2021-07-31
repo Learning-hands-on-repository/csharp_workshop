@@ -12,8 +12,8 @@ namespace BasicCSharp
             var defaultValueDemo = new DefaultValueDemoClass();
 
             // change the variable values of the following 2 lines to correct values
-            var expectedReferenceTypeValue = new RefTypeClass(default(int));
-            const int expectedValueTypeValue = 1;
+            var expectedReferenceTypeValue = default(RefTypeClass);
+            const int expectedValueTypeValue = 0;
 
             Assert.Equal(expectedReferenceTypeValue, defaultValueDemo.referenceTypeValue);
             Assert.Equal(expectedValueTypeValue, defaultValueDemo.valueTypeValue);
