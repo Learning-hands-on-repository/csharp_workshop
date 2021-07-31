@@ -152,7 +152,7 @@ namespace BasicCSharp
             int prefixIncrementalReturnValue = ++numberToIncrement;
 
             // change "default(int)" to correct value.
-            const int expectedResult = default(int);
+            const int expectedResult = 2;
 
             Assert.Equal(expectedResult, prefixIncrementalReturnValue);
         }
