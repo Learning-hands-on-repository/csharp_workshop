@@ -284,7 +284,7 @@ namespace BasicCSharp
             const double numerator = 0;
             const double denominator = 0;
 
-            const double expectedResult = default(double);
+            const double expectedResult = double.NaN;
 
             Assert.Equal(expectedResult, (numerator / denominator));
         }
