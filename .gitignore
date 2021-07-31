@@ -45,4 +45,5 @@ StyleCop.Cache
 .idea/
 */.vs/
 .vs/
+.vscode
 
