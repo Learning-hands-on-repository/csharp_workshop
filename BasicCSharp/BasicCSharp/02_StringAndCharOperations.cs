@@ -42,9 +42,9 @@ namespace BasicCSharp
             string replacement = originalString.Replace("Str", "W");
 
             // change "" in the following 2 lines to correct values.
-            const string expectedOrignalString = "";
-            const string expectedReplacement = "";
-            
+            const string expectedOrignalString = "Original String";
+            const string expectedReplacement = "Original Wing";
+
             Assert.Equal(expectedOrignalString, originalString);
             Assert.Equal(expectedReplacement, replacement);
         }
@@ -56,7 +56,7 @@ namespace BasicCSharp
             builder.Replace("Str", "W");
 
             // change "" in the following line to correct value.
-            const string expectedResult = "";
+            const string expectedResult = "Original Wing";
 
             Assert.Equal(expectedResult, builder.ToString());
         }
