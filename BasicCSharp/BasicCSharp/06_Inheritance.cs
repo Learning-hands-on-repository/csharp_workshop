@@ -181,7 +181,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor(int)\r\nInheritanceConstructorCallDemoClass::Ctor(string)\r\n";
 
             Assert.Equal(expected, message);
         }
@@ -194,7 +194,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\r\nInheritanceConstructorCallDemoClass::Ctor(int)\r\nInheritanceConstructorCallDemoClass::Ctor(int, string)\r\n";
 
             Assert.Equal(expected, message);
         }
@@ -211,9 +211,9 @@ namespace BasicCSharp
             string returnValueForCastingOverloading =
                 demoClass.Foo((MethodOverloadBaseClass) (new MethodOverloadDerivedClass()));
 
-            const string expectedBaseClassOverloadingValue = "";
-            const string expectedDerivedClassOverloadingValue = "";
-            const string expectedCastOverloadingValue = "";
+            const string expectedBaseClassOverloadingValue = "Foo(MethodOverloadBaseClass)";
+            const string expectedDerivedClassOverloadingValue = "Foo(MethodOverloadDerivedClass)";
+            const string expectedCastOverloadingValue = "Foo(MethodOverloadBaseClass)";
 
             Assert.Equal(expectedBaseClassOverloadingValue, returnValueForBaseClassOverloading);
             Assert.Equal(expectedDerivedClassOverloadingValue, returnValueForDerivedClassOverloading);
