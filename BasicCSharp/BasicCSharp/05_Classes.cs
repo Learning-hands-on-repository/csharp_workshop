@@ -91,10 +91,11 @@ namespace BasicCSharp
             var demoClass = new ObjectInitializerDemoClass("propertyA")
             {
                 // add property initialization logic here.
+                PropertyB = "propertyB"
             };
 
-            const string expectedPropertyA = "propertyA.A";
-            const string expectedPropertyB = "propertyB.B";
+            const string expectedPropertyA = "propertyA";
+            const string expectedPropertyB = "propertyB";
 
             Assert.Equal(expectedPropertyA, demoClass.PropertyA);
             Assert.Equal(expectedPropertyB, demoClass.PropertyB);
@@ -108,7 +109,7 @@ namespace BasicCSharp
             demoClass.Name = "My Name";
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "My Name";
 
             Assert.Equal(expected, demoClass.Name);
         }
@@ -119,7 +120,7 @@ namespace BasicCSharp
             var demoClass = new AutoPropertyDemoClass() { Name = "My Name" };
             
             // please change variable value to correct one.
-            const string expected = "Your Name";
+            const string expected = "My Name";
 
             Assert.Equal(expected, demoClass.Name);
         }
@@ -132,7 +133,7 @@ namespace BasicCSharp
             demoClass.Name = "My Name";
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "Your Name Is My Name";
 
             Assert.Equal(expected, demoClass.Name);
         }
