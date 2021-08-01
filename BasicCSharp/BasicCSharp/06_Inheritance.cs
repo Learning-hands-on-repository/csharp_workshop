@@ -127,8 +127,8 @@ namespace BasicCSharp
             string baseClassMethodReturnValue = castedToBaseClass.MethodToHide();
 
             // please change the following 2 variable values to fix the test.
-            const string expectedMethodReturnValue = "";
-            const string expectedBaseClassMethodReturnValue = "";
+            const string expectedMethodReturnValue = "HideMemberDemoClass::MethodToHide()";
+            const string expectedBaseClassMethodReturnValue = "HideMemberDemoClassBase::MethodToHide()";
 
             Assert.Equal(expectedMethodReturnValue, methodReturnValue);
             Assert.Equal(expectedBaseClassMethodReturnValue, baseClassMethodReturnValue);
