@@ -146,7 +146,7 @@ namespace BasicCSharp
             string indexerValue = demoClass[2];
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "You are accessing indexer 2";
 
             Assert.Equal(expected, indexerValue);
         }
@@ -159,7 +159,7 @@ namespace BasicCSharp
             string indexerValue = demoClass["stringArgument"];
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "You are accessing indexer stringArgument";
 
             Assert.Equal(expected, indexerValue);
         }
@@ -172,7 +172,7 @@ namespace BasicCSharp
             string indexerValue = demoClass[1, "Hello"];
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "You are accessing indexer with first argument 1 and second argument Hello";
 
             Assert.Equal(expected, indexerValue);
         }
