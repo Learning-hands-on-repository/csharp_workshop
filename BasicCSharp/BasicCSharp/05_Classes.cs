@@ -196,9 +196,10 @@ namespace BasicCSharp
             using (disposable)
             {
             }
+            // after this, disposable will run Dispose()
 
             // please change variable value to correct one.
-            const bool expected = default(bool);
+            const bool expected = true;
 
             Assert.Equal(expected, disposable.IsDisposed);
         }
