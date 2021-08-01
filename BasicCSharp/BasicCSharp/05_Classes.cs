@@ -183,7 +183,7 @@ namespace BasicCSharp
             string staticFieldValue = StaticConstructorDemoClass.StaticField;
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "You are so cute!";
 
             Assert.Equal(expected, staticFieldValue);
         }
