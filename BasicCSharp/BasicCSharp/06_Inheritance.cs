@@ -142,7 +142,7 @@ namespace BasicCSharp
             string name = demoClass.Name;
 
             // please change the variable value to fix the test.
-            const string expected = "";
+            const string expected = "BaseClass's derived class.";
 
             Assert.Equal(expected, name);
         }
@@ -155,7 +155,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\r\nInheritanceConstructorCallDemoClass::Ctor()\r\n";
 
             Assert.Equal(expected, message);
         }
@@ -168,7 +168,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\r\nInheritanceConstructorCallDemoClass::Ctor(int)\r\n";
 
             Assert.Equal(expected, message);
         }
