@@ -14,7 +14,7 @@ namespace BasicCSharp
             string chosenOne = demoObject.Foo(1);
 
             // change variable value to correct one.
-            const string expected = "Foo()";
+            const string expected = "Foo(int)";
 
             Assert.Equal(expected, chosenOne);
         }
@@ -27,7 +27,7 @@ namespace BasicCSharp
             string chosenOne = demoObject.Foo((object)1);
 
             // change variable value to correct one.
-            const string expected = "Foo()";
+            const string expected = "Foo(object)";
 
             Assert.Equal(expected, chosenOne);
         }
@@ -41,7 +41,7 @@ namespace BasicCSharp
             string chosenOne = demoObject.Foo(argument);
 
             // change variable value to correct one.
-            const string expected = "Foo()";
+            const string expected = "Foo(int)";
 
             Assert.Equal(expected, chosenOne);
         }
@@ -54,7 +54,7 @@ namespace BasicCSharp
             string constructorCallSequence = demoClass.ConstructorCallSequence;
 
             // change variable value to correct one.
-            const string expectedSequence = "Ctor(string)";
+            const string expectedSequence = "Ctor()\r\nCtor(string)\r\n";
 
             Assert.Equal(expectedSequence, constructorCallSequence);
         }
@@ -67,7 +67,7 @@ namespace BasicCSharp
             bool hasDefaultConstructor = demoClass.HasDefaultConstructor();
 
             // change variable value to correct one.
-            const bool expected = false;
+            const bool expected = true;
 
             Assert.Equal(expected, hasDefaultConstructor);
         }
@@ -80,7 +80,7 @@ namespace BasicCSharp
             bool hasDefaultConstructor = demoClass.HasDefaultConstructor();
 
             // change variable value to correct one.
-            const bool expected = true;
+            const bool expected = false;
 
             Assert.Equal(expected, hasDefaultConstructor);
         }
