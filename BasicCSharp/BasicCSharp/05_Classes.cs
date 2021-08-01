@@ -216,7 +216,7 @@ namespace BasicCSharp
             string name = demoClass.ToString();
 
             // please change variable value to correct one.
-            const string expected = "";
+            const string expected = "Mr. Hall";
 
             Assert.Equal(expected, name);
         }
