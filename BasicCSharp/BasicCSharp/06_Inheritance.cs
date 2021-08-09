@@ -155,7 +155,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\r\nInheritanceConstructorCallDemoClass::Ctor()\r\n";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\nInheritanceConstructorCallDemoClass::Ctor()\n";
 
             Assert.Equal(expected, message);
         }
@@ -168,7 +168,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\r\nInheritanceConstructorCallDemoClass::Ctor(int)\r\n";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\nInheritanceConstructorCallDemoClass::Ctor(int)\n";
 
             Assert.Equal(expected, message);
         }
@@ -181,7 +181,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor(int)\r\nInheritanceConstructorCallDemoClass::Ctor(string)\r\n";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor(int)\nInheritanceConstructorCallDemoClass::Ctor(string)\n";
 
             Assert.Equal(expected, message);
         }
@@ -194,7 +194,7 @@ namespace BasicCSharp
             string message = demoClass.ConstructorCallMessage;
 
             // please change the variable value to fix the test.
-            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\r\nInheritanceConstructorCallDemoClass::Ctor(int)\r\nInheritanceConstructorCallDemoClass::Ctor(int, string)\r\n";
+            const string expected = "InheritanceConstructorCallDemoClassBase::Ctor()\nInheritanceConstructorCallDemoClass::Ctor(int)\nInheritanceConstructorCallDemoClass::Ctor(int, string)\n";
 
             Assert.Equal(expected, message);
         }
