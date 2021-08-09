@@ -54,7 +54,7 @@ namespace BasicCSharp
             string constructorCallSequence = demoClass.ConstructorCallSequence;
 
             // change variable value to correct one.
-            const string expectedSequence = "Ctor()\r\nCtor(string)\r\n";
+            const string expectedSequence = "Ctor()\nCtor(string)\n";
 
             Assert.Equal(expectedSequence, constructorCallSequence);
         }
